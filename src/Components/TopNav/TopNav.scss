@@ -1,3 +1,43 @@
-* {
-  color: blue;
+.topNavContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 6vh;
+  background-color: #1C1C1C;
+  color: #ffc917
+
+}
+
+.everyTopNav {
+  padding: 15px ;
+  text-decoration: none;
+}
+
+.tNLinks {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffc917
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.logo {
+  justify-content: flex-start;
+}
+
+.links {
+
 }
