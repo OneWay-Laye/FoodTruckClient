@@ -2,21 +2,25 @@ import React, {Fragment, useState} from 'react'
 
 import style from './TopNav.scss'
 
-const TopNav = () => {
+const TopNav = (props) => {
     const [user, setUser] = useState(null)
 
-    let topNavJSX = <div>
-      <div>Street Food</div>
-      <div>SignIn</div>
-      <div>Regiter Truck</div>
-      <div>Sign Up</div>
-    </div>
+    let topNavJSX = <Fragment>
+      <div className='everyTopNav logo'><a href='#'>Street Food</a></div>
+      <div className='tNLinks'>
+        <div className='everyTopNav links'><a href='#'>SignIn</a></div>
+        <div className='everyTopNav links'><a href='#'>Regiter Truck</a></div>
+        <div className='everyTopNav links'><a href='#'>Sign Up</a></div>
+      </div>
+      </Fragment>
 
     if (user !== null) {
-      let topNavJSX = <div>
-        <div>Street Food</div>
-        <div>Regiter Truck</div>
-      </div>
+      let topNavJSX = <Fragment>
+        <div className='everyTopNav logo'><a href='#'>Street Food</a></div>
+        <div className='tNLinks'>
+          <div className='everyTopNav links'><a href='#'>Regiter Truck</a></div>
+        </div>
+      </Fragment>
     }
 
     return(
@@ -24,6 +28,5 @@ const TopNav = () => {
         {topNavJSX}
       </div>
     )
-}
-
+  }
 export default TopNav
