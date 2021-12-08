@@ -17,7 +17,7 @@ const TopNav = (props) => {
           <a href='#'>Register Truck</a>
         </div>
         <div className='everyTopNav links'>
-          <a href='#'>Sign Up</a>
+          <a href='#/signup'>Sign Up</a>
         </div>
       </div>
       </Fragment>

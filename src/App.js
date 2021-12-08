@@ -5,6 +5,7 @@ import { Route } from 'react-router-dom'
 import Home from './Components/Home/Home'
 import TopNav from './Components/TopNav/TopNav'
 import SignIn from './Components/SignIn/SignIn'
+import SignUp from './Components/SignUp/SignUp'
 
 function App() {
   const [user, setUser] = useState()
@@ -16,8 +17,11 @@ function App() {
       <Route exact path='/home' user={user} render={() => (
         <Home user={user} />
       )} />
-      <Route exact path='/signin' user={user} render={() => (  
+      <Route exact path='/signin' user={user} render={() => (
         <SignIn setUser={setUser}/>
+      )} />
+      <Route exact path='/signup' user={user} render={() => (
+        <SignUp setUser={setUser}/>
       )} />
 
     </div>

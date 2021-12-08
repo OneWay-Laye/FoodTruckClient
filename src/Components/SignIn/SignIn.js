@@ -3,7 +3,7 @@ import React, {Fragment, useState} from 'react'
 import { signInCall } from './../../api/user'
 import style from './SignIn.scss'
 
-const SignIn = () => {
+const SignIn = (props) => {
   const [email, setEmail] = useState(null)
   const [password, setPassword] = useState(null)
 
@@ -22,7 +22,7 @@ const SignIn = () => {
 
 
     signInCall(email, password)
-      .then(res => console.log('successfully signed in!'))
+      .then(res => props.setUser(res))
       .catch(console.log('Error Signing in'))
   }
 

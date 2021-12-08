@@ -5,9 +5,9 @@ const HomeHero = () => {
     return (
       <Fragment>
         <div className='heroTruckRegi'>
-
-        </div>
           
+        </div>
+
         <div className='heroFoodieRegi'>
 
         </div>
